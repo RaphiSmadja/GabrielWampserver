@@ -10,7 +10,10 @@ echo('
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="registration.php">Registration</a>
+          <a class="nav-link" href="registration-page.php">Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login-page.php">Login</a>
         </li>
         
       </ul>

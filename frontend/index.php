@@ -11,11 +11,17 @@
     <h1>Page d'accueil</h1>
     <?php include("header.php")?>
     <?php 
-    echo("<p>
-    
-    Bonjour je suis un paragraphe en PHP
-    </p>
-    ")
+    if(isset($_GET['msg']) && $_GET['msg']=="subscribe_success") {
+      echo '<div class="alert alert-success" role="alert">
+      Welcome frero !
+    </div>';
+    }
+    if(isset($_GET['msg']) && $_GET['msg'] == 'subscribe_error') {
+      echo '
+      <div class="alert alert-danger" role="alert">
+        Pas bon frero !
+      </div>';
+    }
     ?>
   </body>
 </html>
