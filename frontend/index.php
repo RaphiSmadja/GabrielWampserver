@@ -13,7 +13,13 @@
     <?php 
     if(isset($_GET['msg']) && $_GET['msg']=="subscribe_success") {
       echo '<div class="alert alert-success" role="alert">
-      Welcome frero !
+      Inscription validée!
+    </div>';
+    }
+    if(isset($_GET['msg']) && $_GET['msg']=="connexion_success") {
+      echo '<div class="alert alert-success" role="alert">
+      Connexion validée! <br>
+      Welcome
     </div>';
     }
     if(isset($_GET['msg']) && $_GET['msg'] == 'subscribe_error') {

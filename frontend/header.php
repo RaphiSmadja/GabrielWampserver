@@ -1,5 +1,6 @@
 <?php
-echo('
+session_start();
+echo ('
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
 
   <div class="container-fluid">
@@ -15,7 +16,13 @@ echo('
         <li class="nav-item">
           <a class="nav-link" href="login-page.php">Login</a>
         </li>
-        
+        ');
+if (isset($_SESSION["logged_in"])) {
+  echo ('<li class="nav-item">
+            <a class="nav-link" href="myprofil-page.php">MyProfile</a>
+          </li>');
+}
+echo ('
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -24,4 +31,3 @@ echo('
     </div>
   </div>
 </nav>');
-?>
